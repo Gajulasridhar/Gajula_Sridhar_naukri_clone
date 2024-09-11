@@ -1,0 +1,80 @@
+.applications-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 100%;
+    overflow-y: scroll; /* Adds a scrollbar for vertical scrolling */
+    padding: 20px;
+    box-sizing: border-box;
+    height: 80vh; /* Adjust height as needed */
+  }
+  
+  .application-card {
+    background-color: white;
+    border: 2px solid transparent; /* Start with a transparent border */
+    border-radius: 15px; /* Rounded corners */
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: calc(33.333% - 20px); /* 3 cards per row */
+    box-sizing: border-box;
+    flex-shrink: 0;
+    transition: transform 0.3s, border 0.3s; /* Smooth transition for hover effects */
+    position: relative; /* To position the button absolutely */
+  }
+  
+  .application-card h3 {
+    margin-top: 0;
+    font-size: 18px;
+    color: #333;
+  }
+  
+  .application-card p {
+    font-size: 14px;
+    color: #666;
+    margin: 5px 0;
+  }
+  
+  /* Hover effect */
+  .application-card:hover {
+    transform: translateY(-10px); /* Lift the card slightly on hover */
+    border: 2px solid #3498db; /* Change border color on hover */
+     border-image: linear-gradient(to right, #3498db, #8e44ad); 
+    border-image-slice: 1; /* Apply the gradient to the whole border */
+  }
+  
+  /* Status Update Button Styling */
+  .status-update-btn {
+    display: inline-block;
+    background-color: #3498db; /* Blue background */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px; /* Rounded corners */
+    font-size: 14px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transition */
+  }
+  
+  /* Hover effect for Status Update Button */
+  .status-update-btn:hover {
+    background-color: #2980b9; /* Darker blue on hover */
+    transform: translateY(-2px); /* Lift the button slightly on hover */
+  }
+  
+  /* Status Update Button Disabled State */
+  .status-update-btn:disabled {
+    background-color: #28a745; /* Green background for disabled button */
+    cursor: not-allowed; /* Disable further clicks */
+  }
+  
+  .status-update-btn:disabled:hover {
+    transform: none; /* No hover effect for disabled button */
+  }
+  
+  @media screen and (max-width: 768px) {
+    .application-card {
+      width: 100%; /* Full width for small screens */
+    }
+  }
+  

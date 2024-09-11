@@ -1,0 +1,8 @@
+.input-field {
+    color: #000; /* Dark black color for the text */
+    background-color: #fff; /* Ensure the background is white for contrast */
+    border: 1px solid #ccc; /* Optional: Add a border to the input field */
+    padding: 5px; /* Optional: Add some padding */
+    font-size: 16px; /* Adjust the font size */
+  }
+  

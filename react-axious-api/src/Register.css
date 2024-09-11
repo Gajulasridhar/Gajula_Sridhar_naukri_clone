@@ -1,0 +1,70 @@
+/* Main container for centering the form */
+.register-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f4f4f4; /* Light grey background */
+  padding: 0 20px;
+}
+
+.register-wrapper {
+  background-color: #ffffff; /* White background for the form */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  padding: 30px;
+  max-width: 500px; /* Limit form width */
+  width: 100%; /* Full width up to max-width */
+}
+
+.register-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-title {
+  font-size: 2rem; /* Title size */
+  font-weight: 600; /* Title weight */
+  text-align: center; /* Centered title */
+  margin-bottom: 20px;
+}
+
+.input-container {
+  margin-bottom: 15px;
+}
+
+.input-label {
+  display: block;
+  font-size: 0.875rem; /* Label font size */
+  margin-bottom: 5px;
+}
+
+.input-field {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd; /* Light border */
+  border-radius: 5px; /* Rounded input corners */
+  box-sizing: border-box; /* Include padding and border in element's total width and height */
+  font-size: 0.875rem; /* Input font size */
+}
+
+.input-field:focus {
+  border-color: #007bff; /* Blue border on focus */
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25); /* Blue shadow on focus */
+}
+
+.register-btn {
+  background-color: #007bff; /* Primary button color */
+  color: #ffffff; /* White text */
+  border: none;
+  padding: 15px;
+  border-radius: 5px; /* Rounded button corners */
+  font-size: 1rem; /* Button font size */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.register-btn:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}

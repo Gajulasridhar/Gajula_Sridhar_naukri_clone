@@ -1,0 +1,30 @@
+/* Dashboard.css */
+.dashboard-container {
+    margin: 0 auto;
+    padding: 50px;
+    max-width: 600px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    text-align: center;
+  }
+  
+  .dashboard-options {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+  }
+  
+  .dashboard-options li {
+    background: #0f3460;
+    padding: 15px;
+    border-radius: 8px;
+    margin: 10px 0;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .dashboard-options li:hover {
+    background: #e94560;
+  }
+  

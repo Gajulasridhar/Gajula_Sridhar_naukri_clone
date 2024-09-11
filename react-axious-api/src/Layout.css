@@ -1,0 +1,63 @@
+/* Container for the entire application */
+.App {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  /* Header styling */
+  .header {
+    background-color: #007bff; /* Primary color */
+    color: #ffffff; /* White text */
+    padding: 15px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  }
+  
+  .header nav {
+    display: flex;
+    justify-content: center; /* Center navigation items */
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px; /* Space between navigation items */
+  }
+  
+  .nav-links li {
+    margin: 0;
+  }
+  
+  .nav-links a {
+    color: #ffffff; /* White text */
+    text-decoration: none;
+    font-size: 1.125rem; /* Font size */
+    font-weight: 500; /* Medium weight */
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+    padding: 10px;
+  }
+  
+  .nav-links a:hover {
+    color: #e0e0e0; /* Light gray on hover */
+    border-bottom: 2px solid #ffffff; /* Underline effect */
+  }
+  
+  /* Main content styling */
+  main {
+    flex: 1; /* Allow main to grow */
+    padding: 20px;
+    background-color: #f9f9f9; /* Light background color */
+  }
+  
+  /* Responsive design for mobile devices */
+  @media (max-width: 768px) {
+    .nav-links {
+      flex-direction: column; /* Stack links vertically */
+      align-items: center;
+    }
+  
+    .nav-links a {
+      padding: 15px;
+    }
+  }
+  

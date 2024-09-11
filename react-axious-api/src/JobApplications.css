@@ -1,0 +1,110 @@
+/* Applications Container Styling */
+.applications-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  max-width: 100%;
+   overflow-y: scroll; 
+   margin-top: 30px;
+  margin-left: 100px ; /* Adds a scrollbar for vertical scrolling */
+  padding: 20px;
+  box-sizing: border-box;
+  height: 80vh; 
+  justify-items: center;/* Adjust height as needed */
+}
+
+/* Applications Grid Styling */
+.applications-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 3 cards per row */
+  gap: 20px;
+  max-height: 100%; /* Max height adjusted to container height */
+  padding-right: 10px; /* Space for scrollbar */
+  box-sizing: border-box;
+  margin-top: 50px;
+ 
+}
+
+/* Application Card Styling */
+.application-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative; /* To position elements inside the card */
+  transition: transform 0.3s, border 0.3s; /* Smooth transition for hover effects */
+}
+
+/* Card Title Styling */
+.application-card h3 {
+  margin-top: 0;
+  font-size: 1.2em;
+}
+
+/* Card Paragraph Styling */
+.application-card p {
+  margin: 0.5em 0;
+  font-size: 1em;
+}
+
+/* Divider Line Styling */
+.application-card hr {
+  margin: 15px 0;
+  border: none;
+  border-top: 1px solid #ccc;
+}
+
+/* Status Update Section Styling */
+.status-update {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+/* Dropdown Styling */
+.status-update select {
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+/* Button Styling */
+.status-update-btn {
+  padding: 8px 12px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.status-update-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Scrollbar Styling */
+.applications-container::-webkit-scrollbar {
+  width: 8px;
+}
+
+.applications-container::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 10px;
+}
+
+.applications-container::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
+
+/* Application Card Hover Effect */
+.application-card:hover {
+  transform: translateY(-10px); /* Lift the card slightly on hover */
+  border: 2px solid #3498db; /* Change border color on hover */
+  border-image: linear-gradient(to right, #3498db, #8e44ad); /* Gradient border on hover */
+  border-image-slice: 1; /* Apply the gradient to the whole border */
+}

@@ -1,0 +1,170 @@
+/* Container for the entire homepage */
+.home-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #f9f9f9; /* Light background color */
+  padding: 0 20px;
+}
+
+
+.home-header {
+  text-align: center;
+  background-color: #007bff; /* Primary header color */
+  color: #ffffff; /* White text */
+ 
+  border-radius: 0 0 10px 10px;
+  background-color: #007bff; /* Primary color */
+  color: #ffffff; /* White text */
+  padding: 15px 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Rounded bottom corners */
+}
+
+.home-header h1 {
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+.home-header p {
+  font-size: 1.125rem;
+  margin-top: 10px;
+}
+
+.main{
+  /* background-image: url('./jobportal.jpg'); Update with the correct path to your image */
+  /* background-size: cover; */
+  align-items: center;
+  align-content: center;
+
+  background-repeat: no-repeat;
+  padding: 20px; /* Adjust padding as needed */
+  border-radius: 10px;
+  margin-top: 40px;
+ margin: left 60px;
+ width: 100%;
+}
+.main h1{
+  align-items: center;
+  align-content: center;
+  margin-left: 400px;
+  margin-top: 50px;
+}
+/* Search bar container */
+.home-search {
+  margin-top: 50px;
+  /* margin-left: -450px; */
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  align-items: center; /* Make sure it spans the entire width of the container */
+}
+
+.search-bar {
+  width: 60%; /* Adjust width as needed */
+  max-width: 600px; /* Limit the maximum width */
+  height: 50px;
+  
+  z-index: 1000;
+  padding: 10px 20px;
+  border-radius: 25px; /* Rounded corners */
+  border: 2px solid #29487d; /* Slightly darker border */
+  background-color: #4267B2; /* Facebook theme blue color */
+  color: white; /* White text */
+  font-size: 18px; /* Larger font size */
+  font-weight: 500; /* Medium font weight */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle box shadow */
+  transition: box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.search-bar::placeholder {
+  color: rgba(255, 255, 255, 0.7); /* Slightly transparent white placeholder */
+}
+
+.search-bar:focus {
+  outline: none; /* Remove default outline */
+  border-color: #2a56a0; /* Darker blue border on focus */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); /* Slightly stronger shadow on focus */
+}
+
+/* Content section */
+.home-content {
+  display: flex;
+  justify-content: center; /* Center cards horizontally */
+  gap: 20px;
+  flex-wrap: wrap; /* Wrap cards on smaller screens */
+  padding: 20px;
+  flex: 1; /* Allow content to grow */
+  align-items: center; /* Center items vertically */
+  min-height: calc(100vh - 160px);
+  margin-bottom: -150px;
+  margin-top: -150px; /* Adjust height considering header and footer */
+}
+
+.card {
+  background-color: #ffffff; /* Card background color */
+  border: 1px solid #ddd; /* Light border */
+  border-radius: 10px; /* Rounded card corners */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  padding: 20px;
+  width: 300px;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px); /* Lift card on hover */
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+.jobs-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  max-width: 100%;
+  /* overflow-y: scroll; Adds a scrollbar for vertical scrolling */
+  padding: 20px;
+  box-sizing: border-box;
+  height: 80vh;
+  /* Adjust height as needed */
+}
+.job-card {
+  background-color: white;
+  border: 2px solid transparent; /* Start with a transparent border */
+  border-radius: 15px; /* Rounded corners */
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: calc(33.333% - 20px); /* 3 cards per row */
+  box-sizing: border-box;
+  flex-shrink: 0;
+  transition: transform 0.3s, border 0.3s; /* Smooth transition for hover effects */
+  position: relative; /* To position the button absolutely */
+}
+
+.job-card h2 {
+  margin-top: 0;
+  font-size: 18px;
+  color: #333;
+}
+
+.job-card p {
+  font-size: 14px;
+  color: #666;
+  margin: 5px 0;
+}
+
+/* Hover effect */
+.job-card:hover {
+  transform: translateY(-10px); /* Lift the card slightly on hover */
+  border: 2px solid #3498db; /* Change border color on hover */
+  /* border-image: linear-gradient(to right, #3498db, #8e44ad); Gradient border on hover */
+  border-image-slice: 1; /* Apply the gradient to the whole border */
+}
+
+
+.home-footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #007bff; /* Primary footer color */
+  color: #ffffff; /* White text */
+  border-radius: 10px 10px 0 0; /* Rounded top corners */
+}
